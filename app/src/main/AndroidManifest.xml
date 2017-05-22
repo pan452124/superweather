@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.superweather.android">
 
+    <!--
+    你不想一直传递Context参数。为了使API变得简单，只需在AndroidManifest.
+    xml中配置LitePalApplication
+    -->
     <application
+        android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

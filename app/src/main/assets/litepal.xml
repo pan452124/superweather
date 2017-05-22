@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--
+    定义应用程序的数据库名称。
+    默认情况下，每个数据库名称应以.db结尾。
+    如果您没有使用.db命名数据库，则
+    LitePal会为您自动加上后缀。
+    例如：
+    <dbname value =“demo”/>
+    -->
+    <dbname value="superweather" />
+
+    <!--
+     定义数据库的版本。每次要
+     升级数据库时，版本标签都会有所帮助。
+     修改您在映射标签中定义的模型，只需
+     使版本值加一，数据库的升级
+     将自动处理而不必担心。
+     例如：
+     <version value =“1”/>
+    -->
+    <version value="1" />
+
+
+    <!--
+      使用映射标签在列表中定义您的模型，LitePal将为
+      每个映射类创建表。
+      模型中定义的支持字段将被映射到列中。
+      例如：
+      <list>
+          <mapping class =“com.test.model.Reader”/>
+          <mapping class =“com.test.model.Magazine”/>
+      </ list>
+      -->
+    <list>
+        <mapping class = "com.superweather.android.db.Province"/>
+        <mapping class="com.superweather.android.db.City"/>
+        <mapping class="com.superweather.android.db.County"/>
+    </list>
+
+    <!--
+    定义.db文件应该在哪里。“内部”表示.db文件
+    将被存储在没有人可以访问的内部存储的数据库文件夹中。“external”表示.
+    db文件将存储在主外部存储设备上的目录的路径中，应用程序可以放置其拥有的所有人都可以访问的
+    持久性文件。“内部”将作为默认值。例如：
+    <storage value =“external”/>
+   -->
+
+</litepal>
+<!--
+    这是唯一的配置文件，属性很简单。
+
+    dbname配置项目的数据库名称。
+    版本配置数据库的版本。每次你想升级数据库，加上这里的值。
+    列表配置映射类。
+    存储配置应存储数据库文件的位置。内部和外部是唯一有效的选项。
+    -->
