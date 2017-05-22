@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.superweather.android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <!--
     你不想一直传递Context参数。为了使API变得简单，只需在AndroidManifest.
     xml中配置LitePalApplication
