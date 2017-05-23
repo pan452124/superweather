@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SuperWeather</string>
+    <string name="forecast">预报</string>
+    <string name="kongqizhiliang">空气质量</string>
+    <string name="aqi">AQI指数</string>
+    <string name="pm2_5">PM2.5指数</string>
+    <string name="suggest">生活建议</string>
 </resources>
