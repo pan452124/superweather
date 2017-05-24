@@ -7,11 +7,12 @@ import com.google.gson.annotations.SerializedName;
  */
 
 public class Forecast {
+    public String date;
 
-    @SerializedName("temp")
+    @SerializedName("tmp")
     public Temperature temperature;
 
-    private class Temperature {
+    public class Temperature {
         public String max;
         public String min;
 
@@ -20,7 +21,7 @@ public class Forecast {
     @SerializedName("cond")
     public More more;
 
-    private class More {
+    public class More {
         @SerializedName("txt_d")
         public String info;
     }

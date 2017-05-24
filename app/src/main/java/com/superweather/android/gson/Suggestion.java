@@ -10,7 +10,7 @@ public class Suggestion {
     @SerializedName("comf")
     public Comfort comfort;
 
-    private class Comfort {
+    public class Comfort {
         @SerializedName("txt")
         public String info;
     }
@@ -18,15 +18,15 @@ public class Suggestion {
     @SerializedName("cw")
     public CarWash carWash;
 
-    private class CarWash {
+    public class CarWash {
         @SerializedName("txt")
         public String info;
     }
 
-    @SerializedName("sport")
+
     public Sport sport;
 
-    private class Sport {
+    public  class Sport {
         @SerializedName("txt")
         public String info;
     }
