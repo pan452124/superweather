@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SuperWeather</string>
+    <string name="app_name">晴天</string>
     <string name="forecast">预报</string>
     <string name="kongqizhiliang">空气质量</string>
     <string name="aqi">AQI指数</string>
